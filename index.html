@@ -1,19 +1,25 @@
 <!doctype html>
-<html ng-app lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
-    <script type="text/javascript" src="todo.js"></script>
+    
+    <script type="text/javascript">
+        
+        var aa = function($scope){
+            $scope.name = "world"
+        }
+        
+    
+    </script>
     
 </head>
-<body>
-   
-      <div ng-controller="todoCtrl">
-          <h1>Hello {{getName("dz")}}!</h1>
-          <input type="text" name="" ng-model="Name"/>
-      </div>
-   
-    
+<body ng-app>
+    <div ng-controller="aa">
+        <h1>helllo {{name}}!</h1>
+        <input type="text" ng-model="name"/>
+        
+    </div>
 </body>
 </html>
